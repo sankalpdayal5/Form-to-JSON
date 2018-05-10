@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style/main.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1>Enter your Blog Details</h1>
+    </header>
+
+
+    <div class="container">
+        <form name="blog" autocomplete="on">
+            <fieldset>
+                <legend>Your personal blog</legend>
+
+                <div class="row">
+                    <div class="col-25">
+                        <label for="title">Title of the blog *</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="fname" name="title" placeholder="Blog Title.." autofocus required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="img_url">Blog image url *</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="lname" name="img_url" placeholder="Image Link.." required>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-25">
+                        <label for="bp1">Blog Paragraph 1 *</label>
+                    </div>
+                    <div class="col-75">
+                        <textarea id="subject" name="bp1" class="paragraph" placeholder="Write something.." style="height: 200px" required></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="bp2">Blog Paragraph 2</label>
+                    </div>
+                    <div class="col-75">
+                        <textarea id="subject2" name="bp2" class="paragraph" placeholder="Write something more.."></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="bp3">Blog Paragraph 3</label>
+                    </div>
+                    <div class="col-75">
+                        <textarea id="subject3" name="bp3" class="paragraph" placeholder="Write something even more.."></textarea>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-25">
+                        <label for="author_name">Blog Author Name *</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="author_name" name="author_name" placeholder="Author's Name.." required>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <input type="button" onclick="isValid()" value="Submit">
+                </div>
+            </fieldset>
+
+        </form>
+    </div>
+
+
+
+    <form name="blog" autocomplete="on">
+
+        <fieldset>
+            <legend>Your personal blog</legend>
+
+
+            <label for="lab" class="col-25">Title of the blog:</label>
+            <input type="text" name="title" placeholder="Blog Title *" class="col-75" required autofocus>
+
+
+            <br>
+
+
+            <label for="lab" class="col-25">Blog image url:</label>
+            <input type="url" name="img_url" placeholder="Image Link *" class="col-75" required>
+
+
+            <br>
+
+
+            <label for="lab" class="col-25">Blog Paragraph 1:</label>
+            <br>
+            <textarea name="bp1" cols="device-width" rows="5" placeholder="What's in your mind *" class="col-75" required></textarea>
+
+
+            <br>
+
+
+            <label for="lab" class="col-25">Blog Paragraph 2:</label>
+            <br>
+            <textarea name="bp2" cols="device-width" rows="5" class="col-75"></textarea>
+
+
+            <br>
+
+
+            <label for="lab" class="col-25">Blog Paragraph 3:</label>
+            <br>
+            <textarea name="bp3" cols="device-width" rows="5" class="col-75"></textarea>
+
+
+            <br>
+
+
+            <label for="lab" class="col-25">Blog author name:</label>
+            <input type="text" name="author_name" placeholder="Author's name *" class="col-75" required>
+
+
+            <br>
+
+        </fieldset>
+
+    </form>
+
+    <button onclick="isValid()">Submit</button>
+
+    <div id="output">Output comes here</div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
