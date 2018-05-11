@@ -15,14 +15,14 @@
     </header>
 
 
-    <div class="container">
+    <div id="container">
         <form name="blog" autocomplete="on" onsubmit="return isValid()">
             <fieldset>
-                <legend>Your personal blog</legend>
+                <legend class="legend">Your personal blog</legend>
 
                 <div class="row">
                     <div class="col-25">
-                        <label for="title">Title of the blog *</label>
+                        <label for="title">Title of the blog<span class="red_color">*</span></label>
                     </div>
                     <div class="col-75">
                         <input type="text" id="title" name="title" placeholder="Blog Title.." autofocus required>
@@ -30,7 +30,7 @@
                 </div>
                 <div class="row">
                     <div class="col-25">
-                        <label for="img_url">Blog image url *</label>
+                        <label for="img_url">Blog image url<span class="red_color">*</span></label>
                     </div>
                     <div class="col-75">
                         <input type="text" id="img_url" name="img_url" placeholder="Image Link.." required>
@@ -39,10 +39,10 @@
 
                 <div class="row">
                     <div class="col-25">
-                        <label for="bp1">Blog Paragraph 1 *</label>
+                        <label for="bp1">Blog Paragraph 1<span class="red_color">*</span></label>
                     </div>
                     <div class="col-75">
-                        <textarea id="bp1" name="bp1" class="paragraph" placeholder="Write something.." style="height: 150px" required></textarea>
+                        <textarea id="bp1" name="bp1" class="paragraph" placeholder="Write something.." style="height: 150px" minlength="50" required></textarea>
                     </div>
                 </div>
                 <div class="row">
@@ -64,7 +64,7 @@
 
                 <div class="row">
                     <div class="col-25">
-                        <label for="author_name">Blog Author Name *</label>
+                        <label for="author_name">Blog Author Name<span class="red_color">*</span></label>
                     </div>
                     <div class="col-75">
                         <input type="text" id="author_name" name="author_name" placeholder="Author's Name.." required>
